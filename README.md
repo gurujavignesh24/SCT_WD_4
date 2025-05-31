@@ -19,5 +19,15 @@ A simple and clean task management web application that lets users create, prior
 
 ---
 
-## 📂 Project Structure
+## 🔧 Technologies Used
+
+| Category         | Technology                               |
+|------------------|-------------------------------------------|
+| 💻 Frontend      | HTML5, CSS3, JavaScript (Vanilla)         |
+| 🎨 Styling       | CSS Flexbox, Transitions, Responsive Design |
+| 🌗 Theming       | Dark Mode Toggle using CSS and JavaScript |
+| 🧠 Data Storage  | localStorage (for tasks and user profiles) |
+| 📁 Structure     | Modular HTML pages (Home, Tasks, Profile) |
+| 🚀 Deployment    | Netlify     |
+
 
