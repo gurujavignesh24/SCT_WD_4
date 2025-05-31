@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="profile.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tasks.html">Tasks</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="profile.html" class="active">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+   <!-- profile.html -->
+<div class="container">
+  <h2>Create Your Profile</h2>
+  <form id="profile-form">
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" name="name" required /><br /><br />
+
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" name="email" required /><br /><br />
+
+    <button type="submit" class="btn">Save Profile</button>
+  </form>
+
+  <div id="saved-profile" class="profile-box" style="display:none;">
+    <h3>Saved Profile</h3>
+    <p><strong>Name:</strong> <span id="display-name"></span></p>
+    <p><strong>Email:</strong> <span id="display-email"></span></p>
+    <button onclick="editProfile()" class="btn">Edit</button>
+  </div>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your To-Do App</p>
+  </footer>
+
+
+</body>
+</html>

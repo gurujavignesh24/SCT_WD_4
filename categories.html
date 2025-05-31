@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories - To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="categories.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tasks.html">Tasks</a></li>
+        <li><a href="categories.html" class="active">Categories</a></li>
+        <li><a href="profile.html">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Manage Categories</h2>
+    <div class="task-controls">
+      <input type="text" id="categoryInput" placeholder="Enter new category">
+      <button onclick="addCategory()">Add Category</button>
+    </div>
+    <ul id="categoryList" class="task-list"></ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your To-Do App</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasks - To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="tasks.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tasks.html" class="active">Tasks</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="profile.html">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Your Tasks</h2>
+    <div class="task-controls">
+      <input type="text" id="taskInput" placeholder="Enter a new task">
+      <input type="datetime-local" id="taskTime">
+      <select id="taskPriority">
+        <option value="low">Low</option>
+        <option value="medium" selected>Medium</option>
+        <option value="high">High</option>
+      </select>
+      <button onclick="addTask()">Add Task</button>
+    </div>
+    <div id="taskList" class="task-list"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your To-Do App</p>
+  </footer>
+</body>
+</html>
